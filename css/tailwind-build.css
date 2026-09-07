@@ -1,0 +1,170 @@
+/* =========================================================
+   tailwind-build.css
+   Utilidades estáticas equivalentes a las clases de Tailwind
+   usadas en este proyecto. No requiere CDN ni internet.
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { font: inherit; border: none; background: none; cursor: pointer; padding: 0; }
+img, svg { display: block; max-width: 100%; }
+
+/* ---------- Colores ---------- */
+.bg-white { background-color: #ffffff; }
+.bg-white\/90 { background-color: rgba(255, 255, 255, 0.9); }
+.bg-rose-50 { background-color: #fdf1f6; }
+.bg-rose-100 { background-color: #fbe4ee; }
+.bg-rose-600 { background-color: #b83c73; }
+
+.text-white { color: #ffffff; }
+.text-rose-500 { color: #c2477e; }
+.text-rose-600 { color: #b83c73; }
+.text-rose-950 { color: #3a1420; }
+.text-rose-950\/50 { color: rgba(58, 20, 32, 0.5); }
+.text-rose-950\/60 { color: rgba(58, 20, 32, 0.6); }
+.text-rose-950\/70 { color: rgba(58, 20, 32, 0.7); }
+.text-rose-950\/80 { color: rgba(58, 20, 32, 0.8); }
+
+.border { border-width: 1px; border-style: solid; border-color: currentColor; }
+.border-b { border-bottom-width: 1px; border-bottom-style: solid; }
+.border-t { border-top-width: 1px; border-top-style: solid; }
+.border-rose-100 { border-color: #fbe4ee; }
+.border-rose-200 { border-color: #f6cfe0; }
+.border-rose-950\/10 { border-color: rgba(58, 20, 32, 0.1); }
+
+.hover\:bg-rose-50:hover { background-color: #fdf1f6; }
+.hover\:bg-rose-700:hover { background-color: #8f2f57; }
+.hover\:underline:hover { text-decoration: underline; }
+
+.shadow-md { box-shadow: 0 4px 10px rgba(58, 20, 32, 0.12); }
+.shadow-rose-600\/20 { box-shadow: 0 10px 20px -5px rgba(184, 60, 115, 0.2); }
+
+/* ---------- Tipografía ---------- */
+.font-display { font-family: "Playfair Display", "Georgia", serif; }
+.font-sans { font-family: "Inter", system-ui, sans-serif; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+
+.leading-tight { line-height: 1.25; }
+.leading-relaxed { line-height: 1.625; }
+.tracking-tight { letter-spacing: -0.015em; }
+.text-center { text-align: center; }
+
+.list-disc { list-style-type: disc; padding-left: 1.25rem; }
+.list-inside { list-style-position: inside; }
+
+/* ---------- Layout ---------- */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.inline-block { display: inline-block; }
+.block { display: block; }
+.hidden { display: none; }
+.grid { display: grid; }
+
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+
+.gap-1 { gap: 0.25rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-8 > * + * { margin-top: 2rem; }
+
+.overflow-hidden { overflow: hidden; }
+.sticky { position: sticky; }
+.top-0 { top: 0; }
+.z-50 { z-index: 50; }
+.backdrop-blur { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+
+/* ---------- Tamaños ---------- */
+.w-6 { width: 1.5rem; }
+.w-10 { width: 2.5rem; }
+.w-20 { width: 5rem; }
+.w-24 { width: 6rem; }
+.h-6 { height: 1.5rem; }
+.h-10 { height: 2.5rem; }
+.h-20 { height: 5rem; }
+.h-24 { height: 6rem; }
+.h-36 { height: 9rem; }
+
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-6xl { max-width: 72rem; }
+.max-w-7xl { max-width: 80rem; }
+.max-w-xl { max-width: 36rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ---------- Espaciado ---------- */
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+.pb-4 { padding-bottom: 1rem; }
+.pb-14 { padding-bottom: 3.5rem; }
+.pb-24 { padding-bottom: 6rem; }
+.pt-4 { padding-top: 1rem; }
+.pt-16 { padding-top: 4rem; }
+.pt-20 { padding-top: 5rem; }
+
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-10 { margin-top: 2.5rem; }
+.mt-12 { margin-top: 3rem; }
+
+.rounded-full { border-radius: 9999px; }
+.rounded-2xl { border-radius: 1rem; }
+
+/* ---------- Transiciones ---------- */
+.transition-colors { transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+
+/* ---------- Responsive: sm (>=640px) ---------- */
+@media (min-width: 640px) {
+  .sm\:flex-row { flex-direction: row; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sm\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .sm\:text-5xl { font-size: 3rem; line-height: 1; }
+  .sm\:text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+}
+
+/* ---------- Responsive: md (>=768px) ---------- */
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:hidden { display: none; }
+  .md\:text-5xl { font-size: 3rem; line-height: 1; }
+  .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
+/* ---------- Responsive: lg (>=1024px) ---------- */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

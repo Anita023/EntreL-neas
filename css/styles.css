@@ -1,0 +1,84 @@
+/* =========================================================
+   Comunicación Asertiva — estilos personalizados
+   Complementan las utilidades de Tailwind (no las reemplazan)
+   ========================================================= */
+
+:root {
+  --color-rose-950: #3a1420;
+  --color-rose-600: #b83c73;
+  --color-rose-500: #c2477e;
+  --color-bg-soft: #fdf1f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #2b1e26;
+}
+
+.font-display {
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+/* Fondo degradado suave del hero, igual al de la referencia */
+.hero-gradient {
+  background: radial-gradient(circle at 20% 20%, #fbe4ee 0%, transparent 55%),
+    radial-gradient(circle at 80% 0%, #f3e6fb 0%, transparent 50%),
+    linear-gradient(180deg, #fdf1f6 0%, #fdeaf1 100%);
+}
+
+/* Subrayado animado para los enlaces del menú */
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-rose-500);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--color-rose-600);
+  font-weight: 600;
+}
+
+/* Tarjetas de integrantes / creadores */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -15px rgba(58, 20, 32, 0.25);
+}
+
+/* Menú móvil */
+#mobile-menu {
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+  overflow: hidden;
+}
+
+#mobile-menu.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+#mobile-menu.open {
+  max-height: 500px;
+  opacity: 1;
+}

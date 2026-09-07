@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunicación Asertiva | Comunicación</title>
+  <meta name="description" content="Qué es la comunicación asertiva y por qué es importante para el tecnólogo en ADSO." />
+
+  <!-- Tailwind CSS (build estático local, sin CDN) -->
+  <link rel="stylesheet" href="../css/tailwind-build.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-page="comunicacion" class="bg-white text-rose-950">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="../index.html" class="font-sans font-bold text-lg tracking-tight">
+        Comunicación<span class="text-rose-500">Asertiva</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
+        <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
+        <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
+        <li><a href="tipos.html" data-nav-link="tipos" class="nav-link">Tipos</a></li>
+        <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Integrantes</a></li>
+        <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link">Reflexiones</a></li>
+      </ul>
+
+      <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
+      <li><a href="../index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
+      <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
+      <li><a href="tipos.html" data-nav-link="tipos" class="nav-link block py-2">Tipos</a></li>
+      <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
+      <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
+      <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link block py-2">Reflexiones</a></li>
+    </ul>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="hero-gradient">
+    <div class="max-w-4xl mx-auto px-6 pt-16 pb-14 text-center">
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-rose-950">¿Qué es la comunicación asertiva?</h1>
+      <p class="mt-4 max-w-2xl mx-auto text-rose-950/70">Introducción al concepto y a su importancia dentro del desempeño profesional del tecnólogo en Análisis y Desarrollo de Software.</p>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <article class="prose-content space-y-6 text-rose-950/80 leading-relaxed">
+      <p>
+        La comunicación asertiva es la capacidad de expresar ideas, opiniones y necesidades de forma
+        clara, directa y respetuosa, sin agredir ni someterse a los demás. En el contexto del tecnólogo
+        en Análisis y Desarrollo de Software, esta habilidad resulta clave para el trabajo en equipo,
+        la relación con clientes y la resolución de conflictos dentro de proyectos de software.
+      </p>
+      <p>
+        <!-- TODO: completar con el contenido desarrollado por el equipo -->
+        Reemplaza este párrafo con la introducción específica del curso: definición trabajada en clase,
+        autores de referencia y por qué se eligió este tema para el proyecto.
+      </p>
+
+      <h2 class="font-display text-2xl font-bold text-rose-950 pt-4">Importancia en el rol del tecnólogo ADSO</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Facilita la comunicación con el equipo de desarrollo y otras áreas del negocio.</li>
+        <li>Permite dar y recibir retroalimentación técnica de forma constructiva.</li>
+        <li>Mejora la gestión de requerimientos con clientes y usuarios.</li>
+        <li>Contribuye a un mejor clima de trabajo en metodologías ágiles.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-rose-100 py-8">
+    <p class="text-center text-sm text-rose-950/50">
+      &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+    </p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

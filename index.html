@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunicaciones</title>
+  <meta name="description" content="Rol de la comunicación asertiva en el desempeño del tecnólogo en ADSO." />
+
+  <!-- Tailwind CSS (build estático local, sin CDN) -->
+  <link rel="stylesheet" href="css/tailwind-build.css" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="inicio" class="bg-white text-rose-950">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="font-sans font-bold text-lg tracking-tight">
+        Entre<span class="text-rose-500">Lineas</span>
+      </a>
+
+      <!-- Menú escritorio -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
+        <li><a href="index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
+        <li><a href="pages/comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
+        <li><a href="pages/tipos.html" data-nav-link="tipos" class="nav-link">Tipos</a></li>
+        <li><a href="pages/trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link">Integrantes</a></li>
+        <li><a href="pages/reflexiones.html" data-nav-link="reflexiones" class="nav-link">Reflexiones</a></li>
+      </ul>
+
+      <!-- Botón menú móvil -->
+      <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
+      <li><a href="index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
+      <li><a href="pages/comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
+      <li><a href="pages/tipos.html" data-nav-link="tipos" class="nav-link block py-2">Tipos</a></li>
+      <li><a href="pages/trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
+      <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
+      <li><a href="pages/reflexiones.html" data-nav-link="reflexiones" class="nav-link block py-2">Reflexiones</a></li>
+    </ul>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-gradient">
+    <div class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight text-rose-950">
+        Rol de la comunicación asertiva en el desempeño del tecnólogo en ADSO
+      </h1>
+
+      <p class="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-rose-950/70">
+        Este sitio reúne lo aprendido durante la formación en comunicación asertiva: su importancia,
+        los tipos de comunicación, las evidencias de cada integrante y las reflexiones personales del trimestre.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="pages/comunicacion.html"
+          class="px-6 py-3 rounded-full bg-rose-600 text-white font-semibold text-sm shadow-md shadow-rose-600/20 hover:bg-rose-700 transition-colors">
+          Ver introducción
+        </a>
+        <a href="pages/trabajos.html"
+          class="px-6 py-3 rounded-full bg-white border border-rose-950/10 text-rose-950 font-semibold text-sm hover:bg-rose-50 transition-colors">
+          Trabajos del trimestre
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CREADORES ===================== -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl text-center text-rose-950">
+      Creadores de la página
+    </h2>
+    <p class="mt-3 text-center text-rose-950/60 max-w-xl mx-auto">
+      Estudiantes del programa Análisis y Desarrollo de Software (ADSO) responsables de este sitio.
+    </p>
+
+    <div id="creadores-grid" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Tarjeta de ejemplo — duplicar/editar por integrante -->
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
+          NN
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
+        <p class="text-sm text-rose-950/60">Rol dentro del proyecto</p>
+      </article>
+
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
+          NN
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
+        <p class="text-sm text-rose-950/60">Rol dentro del proyecto</p>
+      </article>
+
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
+        <div class="w-20 h-20 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
+          NN
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
+        <p class="text-sm text-rose-950/60">Rol dentro del proyecto</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-rose-100 py-8">
+    <p class="text-center text-sm text-rose-950/50">
+      &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunicación Asertiva | Trabajos del trimestre</title>
+  <meta name="description" content="Evidencias y trabajos entregados durante el trimestre sobre comunicación asertiva." />
+
+  <!-- Tailwind CSS (build estático local, sin CDN) -->
+  <link rel="stylesheet" href="../css/tailwind-build.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-page="trabajos" class="bg-white text-rose-950">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="../index.html" class="font-sans font-bold text-lg tracking-tight">
+        Comunicación<span class="text-rose-500">Asertiva</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
+        <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
+        <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
+        <li><a href="tipos.html" data-nav-link="tipos" class="nav-link">Tipos</a></li>
+        <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Integrantes</a></li>
+        <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link">Reflexiones</a></li>
+      </ul>
+
+      <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
+      <li><a href="../index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
+      <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
+      <li><a href="tipos.html" data-nav-link="tipos" class="nav-link block py-2">Tipos</a></li>
+      <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
+      <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
+      <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link block py-2">Reflexiones</a></li>
+    </ul>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="hero-gradient">
+    <div class="max-w-4xl mx-auto px-6 pt-16 pb-14 text-center">
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-rose-950">Trabajos del trimestre</h1>
+      <p class="mt-4 max-w-2xl mx-auto text-rose-950/70">Evidencias, talleres y entregables desarrollados durante la formación en comunicación asertiva.</p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div id="trabajos-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
+        <div class="h-36 bg-rose-100"></div>
+        <div class="p-5">
+          <h3 class="font-semibold text-rose-950">Nombre del trabajo</h3>
+          <p class="mt-1 text-sm text-rose-950/60">Breve descripción de la evidencia entregada.</p>
+          <a href="#" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ver evidencia →</a>
+        </div>
+      </article>
+
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
+        <div class="h-36 bg-rose-100"></div>
+        <div class="p-5">
+          <h3 class="font-semibold text-rose-950">Nombre del trabajo</h3>
+          <p class="mt-1 text-sm text-rose-950/60">Breve descripción de la evidencia entregada.</p>
+          <a href="#" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ver evidencia →</a>
+        </div>
+      </article>
+
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
+        <div class="h-36 bg-rose-100"></div>
+        <div class="p-5">
+          <h3 class="font-semibold text-rose-950">Nombre del trabajo</h3>
+          <p class="mt-1 text-sm text-rose-950/60">Breve descripción de la evidencia entregada.</p>
+          <a href="#" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ver evidencia →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-rose-100 py-8">
+    <p class="text-center text-sm text-rose-950/50">
+      &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+    </p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
