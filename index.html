@@ -6,36 +6,31 @@
   <title>EntreLineas</title>
   <meta name="description" content="Comunicacion en el Analisis y Desarrollo de Software." />
 
-  <!-- Tailwind CSS (build estático local, sin CDN) -->
   <link rel="stylesheet" href="css/tailwind-build.css" />
 
-  <!-- Fuentes -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Estilos propios -->
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-page="inicio" class="bg-white text-rose-950">
 
-  <!-- ===================== NAV ===================== -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
     <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
       <a href="index.html" class="font-sans font-bold text-lg tracking-tight">
         Entre<span class="text-rose-500">Lineas</span>
       </a>
 
-      <!-- Menú escritorio -->
       <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
         <li><a href="index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
         <li><a href="pages/comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
-        <li><a href="pages/tipos.html" data-nav-link="tipos" class="nav-link">Tipos</a></li>
+        <li><a href="pages/tematica.html" data-nav-link="tematica" class="nav-link">Temática</a></li>
         <li><a href="pages/trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
-        <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link">Integrantes</a></li>
-        <li><a href="pages/reflexiones.html" data-nav-link="reflexiones" class="nav-link">Reflexiones</a></li>
+        <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link">Nosotras</a></li>
       </ul>
 
-      <!-- Botón menú móvil -->
       <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
         class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -44,18 +39,15 @@
       </button>
     </nav>
 
-    <!-- Menú móvil -->
     <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
       <li><a href="index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
       <li><a href="pages/comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
-      <li><a href="pages/reto.html" data-nav-link="reto" class="nav-link block py-2">Reto</a></li>
+      <li><a href="pages/tematica.html" data-nav-link="tematica" class="nav-link block py-2">Temática</a></li>
       <li><a href="pages/trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
-      <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
-      <li><a href="pages/reflexiones.html" data-nav-link="reflexiones" class="nav-link block py-2">Reflexiones</a></li>
+      <li><a href="pages/integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Nosotras</a></li>
     </ul>
   </header>
 
-  <!-- ===================== HERO ===================== -->
   <section class="hero-gradient">
     <div class="max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
       <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight text-rose-950">
@@ -63,7 +55,7 @@
       </h1>
 
       <p class="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-rose-950/70">
-        Este sitio reúne lo aprendido durante la formación en comunicaciónes: su importancia,
+        Este sitio reúne lo aprendido durante la formación en comunicaciones: su importancia,
         los tipos de comunicación, las evidencias de cada integrante y las reflexiones personales del trimestre.
       </p>
 
@@ -80,46 +72,145 @@
     </div>
   </section>
 
-  <!-- ===================== CREADORES ===================== -->
+  <section class="max-w-5xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+      <div>
+        <span class="inline-block text-xs font-semibold tracking-[0.25em] text-rose-500 uppercase mb-3">
+          Sobre este espacio
+        </span>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-rose-950 leading-snug">
+          ¿Por qué <span class="text-rose-500">EntreLineas</span>?
+        </h2>
+        <p class="mt-5 text-rose-950/70 leading-relaxed">
+          Elegimos este nombre porque la comunicación casi nunca se queda en lo que decimos con palabras.
+          Como aprendimos en clase, apenas un <strong>7%</strong> de lo que transmitimos es verbal; el resto
+          vive <strong>entre líneas</strong>: en el tono, en el silencio, en un gesto o en la forma en que
+          decidimos decir las cosas. Este sitio nació para recoger ese aprendizaje y ponerlo en un lugar que
+          pudiéramos compartir.
+        </p>
+        <p class="mt-4 text-rose-950/70 leading-relaxed">
+          Somos dos estudiantes de <strong>ADSO</strong> y quisimos que este espacio reflejara no solo la
+          teoría vista en la formación de comunicaciones, sino también nuestra manera de entenderla y
+          aplicarla, tanto en el trabajo en equipo como en el desarrollo de software.
+        </p>
+      </div>
+
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-8">
+        <h3 class="font-display font-bold text-lg text-rose-950">Lo que vas a encontrar</h3>
+        <ul class="mt-4 space-y-3 text-sm text-rose-950/70">
+          <li class="flex gap-3">
+            <span class="text-rose-500 font-bold">—</span>
+            Los conceptos clave vistos durante el trimestre, explicados en nuestras propias palabras.
+          </li>
+          <li class="flex gap-3">
+            <span class="text-rose-500 font-bold">—</span>
+            Las evidencias y talleres que fuimos desarrollando en el camino.
+          </li>
+          <li class="flex gap-3">
+            <span class="text-rose-500 font-bold">—</span>
+            Una reflexión personal de cada una sobre lo que esta formación nos dejó.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
   <section class="max-w-6xl mx-auto px-6 py-20">
     <h2 class="font-display font-bold text-3xl sm:text-4xl text-center text-rose-950">
-      Creadores de la página
+      ¿Qué vas a encontrar aquí?
     </h2>
     <p class="mt-3 text-center text-rose-950/60 max-w-xl mx-auto">
-      Estudiantes del programa Análisis y Desarrollo de Software (ADSO) responsables de este sitio.
+      Un recorrido por todo lo trabajado durante el trimestre en la competencia de Comunicación.
     </p>
 
-    <div id="creadores-grid" class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto items-stretch">
-      <!-- Tarjeta de ejemplo — duplicar/editar por integrante -->
-      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center h-full flex flex-col">
-        <div class="w-20 h-20 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
-          AD
-        </div>
-        <h3 class="mt-4 font-semibold text-rose-950">Ana Maria Deossa Serna</h3>
-        <p class="mt-2 text-sm text-rose-950/60"> Hola, soy Ana María, estudiante de ADSO. Mi interés en esta competencia de Comunicación es fortalecer una comunicación asertiva que nos permita lograr una comprensión mutua y un excelente trabajo en equipo. A lo largo del trimestre quiero profundizar en cómo se aplican los distintos tipos de comunicación en un equipo de desarrollo de software. Me interesa especialmente aprender a dar y recibir retroalimentación de manera clara y respetuosa, una habilidad clave para mi crecimiento profesional. </p>
-      </article>
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center h-full flex flex-col">
-        <div class="w-20 h-20 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
-          JR
+      <a href="pages/comunicacion.html" class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8-1.06 0-2.075-.163-3.017-.464L3 21l1.395-3.72C3.512 16.042 3 14.574 3 13c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
         </div>
-        <h3 class="mt-4 font-semibold text-rose-950">Juanita Roman Bedoya</h3>
-        <p class="mt-2 text-sm text-rose-950/60">Hola. Soy Juanita Román Bedoya, tengo 17 años y soy un aprendiz de ADSO. En esta competencia de Comunicación, mi propósito es profundizar en los conceptos clave de la comunicación humana, comprender su impacto en el ejercicio profesional y descubrir herramientas prácticas para optimizar mi desempeño. Me interesa especialmente explorar distintas técnicas comunicativas para fortalecer tanto mis relaciones personales como mi perfil laboral.</p>
-      </article>
-    </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Comunicación</h3>
+        <p class="mt-2 text-sm text-rose-950/60 flex-1">Qué es la comunicación y por qué es importante, en nuestras propias palabras.</p>
+        <span class="mt-4 text-sm font-medium text-rose-600">Ver introducción →</span>
+      </a>
 
-    <div class="mt-10 max-w-2xl mx-auto bg-rose-50/60 border border-rose-100 rounded-2xl p-6 text-center">
-      <p class="text-sm text-rose-950/70">
-        En esta página les mostraremos cómo profundizamos en este tema a lo largo del trimestre.
-      </p>
+      <a href="pages/tematica.html" class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Temática</h3>
+        <p class="mt-2 text-sm text-rose-950/60 flex-1">Todo lo visto en formación: tipos, estilos, funciones del lenguaje y comunicación no verbal.</p>
+        <span class="mt-4 text-sm font-medium text-rose-600">Ver temática →</span>
+      </a>
+
+      <a href="pages/trabajos.html" class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Trabajos</h3>
+        <p class="mt-2 text-sm text-rose-950/60 flex-1">Evidencias y talleres entregados durante la formación en comunicación asertiva.</p>
+        <span class="mt-4 text-sm font-medium text-rose-600">Ver trabajos →</span>
+      </a>
+
+      <a href="pages/integrantes.html" class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+        <div class="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-4.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4" />
+          </svg>
+        </div>
+        <h3 class="mt-4 font-semibold text-rose-950">Nosotras</h3>
+        <p class="mt-2 text-sm text-rose-950/60 flex-1">Quiénes somos, el reto de tipos de comunicación y la reflexión de cada una.</p>
+        <span class="mt-4 text-sm font-medium text-rose-600">Conocer al equipo →</span>
+      </a>
+
     </div>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="border-t border-rose-100 py-8">
-    <p class="text-center text-sm text-rose-950/50">
-      &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
-    </p>
+ <footer class="bg-gradient-to-br from-rose-500 to-rose-700 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-3 gap-10">
+
+      <div>
+        <a href="index.html" class="font-sans font-bold text-lg tracking-tight text-white">
+          Entre<span class="text-rose-400">Lineas</span>
+        </a>
+        <p class="mt-3 text-sm text-white/60 leading-relaxed">
+          Un recorrido por lo aprendido en la formación de comunicaciones,
+          contado por dos estudiantes de ADSO.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Explorar</h3>
+        <ul class="mt-4 space-y-2 text-sm text-white/70">
+          <li><a href="pages/comunicacion.html" class="hover:text-white transition-colors">Comunicación</a></li>
+          <li><a href="pages/tematica.html" class="hover:text-white transition-colors">Temática</a></li>
+          <li><a href="pages/trabajos.html" class="hover:text-white transition-colors">Trabajos</a></li>
+          <li><a href="pages/integrantes.html" class="hover:text-white transition-colors">Nosotras</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Creadoras</h3>
+        <p class="mt-4 text-sm text-white/70">Ana María Deossa Serna</p>
+        <p class="mt-1 text-sm text-white/70">Juanita Román Bedoya</p>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10">
+      <p class="max-w-6xl mx-auto px-6 py-5 text-center text-xs text-white/40">
+        &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+      </p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

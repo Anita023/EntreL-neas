@@ -82,3 +82,77 @@ body {
   max-height: 500px;
   opacity: 1;
 }
+
+/* ===== Modal reto ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(76, 5, 25, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 100;
+}
+
+.modal-overlay.closed {
+  display: none;
+}
+
+.modal-panel {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  max-width: 32rem;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: rgba(76, 5, 25, 0.4);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: rgba(76, 5, 25, 0.8);
+}
+
+.tarjeta {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el espacio verticalmente */
+  height: 100%; /* Ocupa toda la altura de la fila del grid */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Zona morada del botón */
+.zona-boton {
+  background-color: #9b4d6e; /* Tu tono morado/rosado */
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}

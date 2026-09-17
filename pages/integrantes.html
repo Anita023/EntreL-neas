@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Comunicación Asertiva | Integrantes</title>
-  <meta name="description" content="Integrantes del equipo que desarrolló el proyecto de comunicación asertiva." />
+  <title>EntreLineas</title>
+  <meta name="description" content="Integrantes del equipo: descripción, el reto de tipos de comunicación y la reflexión final de cada una." />
 
   <!-- Tailwind CSS (build estático local, sin CDN) -->
   <link rel="stylesheet" href="../css/tailwind-build.css" />
@@ -20,16 +20,15 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
     <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
       <a href="../index.html" class="font-sans font-bold text-lg tracking-tight">
-        Comunicación<span class="text-rose-500">Asertiva</span>
+        Entre<span class="text-rose-500">Lineas</span>
       </a>
 
       <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
         <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
         <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
-        <li><a href="reto.html" data-nav-link="reto" class="nav-link">Reto</a></li>
+        <li><a href="tematica.html" data-nav-link="tematica" class="nav-link">Temática</a></li>
         <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
-        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Integrantes</a></li>
-        <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link">Reflexiones</a></li>
+        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Nosotras</a></li>
       </ul>
 
       <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
@@ -43,10 +42,9 @@
     <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
       <li><a href="../index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
       <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
-      <li><a href="reto.html" data-nav-link="reto" class="nav-link block py-2">Reto</a></li>
+      <li><a href="tematica.html" data-nav-link="tematica" class="nav-link block py-2">Temática</a></li>
       <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
       <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
-      <li><a href="reflexiones.html" data-nav-link="reflexiones" class="nav-link block py-2">Reflexiones</a></li>
     </ul>
   </header>
 
@@ -54,45 +52,208 @@
   <section class="hero-gradient">
     <div class="max-w-4xl mx-auto px-6 pt-16 pb-14 text-center">
       <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-rose-950">Integrantes del equipo</h1>
-      <p class="mt-4 max-w-2xl mx-auto text-rose-950/70">Conoce a los estudiantes de ADSO que hicieron parte de este proyecto.</p>
+      <p class="mt-4 max-w-2xl mx-auto text-rose-950/70">
+        Conoce a las estudiantes de ADSO que hicieron parte de este proyecto: quiénes son, el reto de
+        tipos de comunicación que trabajaron y lo que aprendieron durante el trimestre.
+      </p>
     </div>
   </section>
 
+  <!-- ===================== INTEGRANTES ===================== -->
   <section class="max-w-6xl mx-auto px-6 py-16">
-    <div id="integrantes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="integrantes-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
-        <div class="w-24 h-24 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
-          NN
+      <!-- ===== Ana María ===== -->
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+      <div class="w-32 h-32 mx-auto rounded-full overflow-hidden bg-rose-100">
+        <img src="../Img/ana-maria.jpg" alt="Ana María Deossa Serna" class="w-full h-full object-cover">
+      </div>
+        <h3 class="mt-4 font-semibold text-center text-rose-950">Ana María Deossa Serna</h3>
+        <p class="mt-1 text-xs text-center text-rose-950/50">Estudiante de ADSO</p>
+
+        <p class="mt-4 text-sm text-rose-950/70 leading-relaxed">
+          Hola, soy Ana María, estudiante de ADSO. Mi interés en esta competencia de Comunicación es
+          fortalecer una comunicación asertiva que nos permita lograr una comprensión mutua y un excelente
+          trabajo en equipo. A lo largo del trimestre quiero profundizar en cómo se aplican los distintos
+          tipos de comunicación en un equipo de desarrollo de software. Me interesa especialmente aprender
+          a dar y recibir retroalimentación de manera clara y respetuosa, una habilidad clave para mi
+          crecimiento profesional.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" data-modal-target="reto-ana"
+            class="px-5 py-2.5 rounded-full bg-rose-600 text-white text-sm font-semibold hover:bg-rose-700 transition-colors">
+            Ver reto
+          </button>
+          <button type="button" data-modal-target="reflexion-ana"
+            class="px-5 py-2.5 rounded-full bg-white border border-rose-200 text-rose-950 text-sm font-semibold hover:bg-rose-50 transition-colors">
+            Ver reflexión
+          </button>
         </div>
-        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
-        <p class="text-sm text-rose-950/60">Ficha / grupo</p>
       </article>
 
-      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
-        <div class="w-24 h-24 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
-          NN
+      <!-- ===== Juanita ===== -->
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 flex flex-col">
+        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden bg-rose-100">
+          <img src="../Img/juanita.jpg" alt="Juanita Román Bedoya" class="w-full h-full object-cover">
         </div>
-        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
-        <p class="text-sm text-rose-950/60">Ficha / grupo</p>
-      </article>
+        <h3 class="mt-4 font-semibold text-center text-rose-950">Juanita Román Bedoya</h3>
+        <p class="mt-1 text-xs text-center text-rose-950/50">Estudiante de ADSO</p>
 
-      <article class="card-hover bg-white rounded-2xl border border-rose-100 p-6 text-center">
-        <div class="w-24 h-24 mx-auto rounded-full bg-rose-100 flex items-center justify-center font-display text-2xl text-rose-600">
-          NN
+        <p class="mt-4 text-sm text-rose-950/70 leading-relaxed">
+          Hola. Soy Juanita Román Bedoya, aprendiz de ADSO. En esta competencia de Comunicación, mi
+          propósito es profundizar en los conceptos clave de la comunicación humana, comprender su impacto
+          en el ejercicio profesional y descubrir herramientas prácticas para optimizar mi desempeño. Me
+          interesa especialmente explorar distintas técnicas comunicativas para fortalecer tanto mis
+          relaciones personales como mi perfil laboral.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" data-modal-target="reto-juanita"
+            class="px-5 py-2.5 rounded-full bg-rose-600 text-white text-sm font-semibold hover:bg-rose-700 transition-colors">
+            Ver reto
+          </button>
+          <button type="button" data-modal-target="reflexion-juanita"
+            class="px-5 py-2.5 rounded-full bg-white border border-rose-200 text-rose-950 text-sm font-semibold hover:bg-rose-50 transition-colors">
+            Ver reflexión
+          </button>
         </div>
-        <h3 class="mt-4 font-semibold text-rose-950">Nombre Apellido</h3>
-        <p class="text-sm text-rose-950/60">Ficha / grupo</p>
       </article>
 
     </div>
   </section>
+
+  <!-- ===================== MODAL: RETO ANA ===================== -->
+  <div id="modal-reto-ana" class="modal-overlay closed" role="dialog" aria-modal="true" aria-labelledby="modal-reto-ana-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">&times;</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Reto · Tipos de comunicación</span>
+      <h3 id="modal-reto-ana-title" class="mt-1 font-display font-bold text-xl text-rose-950">Ana María Deossa Serna</h3>
+
+      <div class="mt-4 space-y-4 text-sm text-rose-950/80 leading-relaxed">
+        <div>
+          <p class="font-semibold text-rose-950">¿Con quién es el problema?</p>
+          <!-- TODO: Ana María debe completar/ajustar esta respuesta -->
+          <p class="mt-1">Escribe aquí con qué persona o personas dejaste de hablarte o tienes dificultades de comunicación.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-rose-950">¿Cuál fue el problema?</p>
+          <p class="mt-1">Escribe aquí qué situación generó que la comunicación se dañara.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-rose-950">¿Qué tipo de comunicación falló?</p>
+          <p class="mt-1">Identifica si fue agresiva, pasiva, pasivo-agresiva o agresivo-pasiva, y por qué.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL: RETO JUANITA ===================== -->
+  <div id="modal-reto-juanita" class="modal-overlay closed" role="dialog" aria-modal="true" aria-labelledby="modal-reto-juanita-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">&times;</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Reto · Tipos de comunicación</span>
+      <h3 id="modal-reto-juanita-title" class="mt-1 font-display font-bold text-xl text-rose-950">Juanita Román Bedoya</h3>
+
+      <div class="mt-4 space-y-4 text-sm text-rose-950/80 leading-relaxed">
+        <div>
+          <p class="font-semibold text-rose-950">¿Con quién es el problema?</p>
+          <p class="mt-1">Con la familia de mi papá.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-rose-950">¿Cuál fue el problema?</p>
+          <!-- TODO: Juanita puede ampliar esta respuesta más adelante -->
+          <p class="mt-1">No fue algo que pasó de un momento a otro, sino una acumulación de situaciones a lo largo de mucho tiempo. La relación entre mis tíos y tías siempre ha sido inestable: peleas que se resuelven a medias y vuelven a repetirse, dobles discursos según a quién estén tratando en el momento, y una tendencia constante a criticar y hablar mal de los demás miembros de la familia, incluyendo a mis papás y a mi hermano. Cuando alguien intenta acercarse o mantener la relación con todos, terminan tildándolo de "metido" o "conveniente". Incluso cuando la salud de una de mis tías se vio comprometida y esto los llevó a acercarse de nuevo, con el tiempo todo volvió a lo mismo: los chismes y las peleas regresaron. Con los años, esa dinámica se hizo cada vez más difícil de ignorar, y decidí alejarme para no seguir siendo parte de un ambiente donde todos aparentan que todo está bien cuando en realidad no lo está.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-rose-950">¿Qué tipo de comunicación falló?</p>
+          <p class="mt-1">
+          La que falló de mi parte fue la comunicación pasiva. En vez de expresar directamente lo que me incomodaba de esa dinámica familiar, opté por callarlo y simplemente alejarme, comentándoselo solo a mis papás. Nunca hablé con mis tíos, tías o primas sobre por qué me distancié, lo que hizo que ellos construyeran su propia versión de la situación (que ya no estoy pendiente de la familia) en lugar de conocer la razón real. Una comunicación más asertiva me habría permitido expresar con claridad y respeto lo que sentía, en vez de dejar que el silencio fuera interpretado de la forma equivocada.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL: REFLEXIÓN ANA ===================== -->
+  <div id="modal-reflexion-ana" class="modal-overlay closed" role="dialog" aria-modal="true" aria-labelledby="modal-reflexion-ana-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">&times;</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Reflexión del trimestre</span>
+      <h3 id="modal-reflexion-ana-title" class="mt-1 font-display font-bold text-xl text-rose-950">Ana María Deossa Serna</h3>
+
+      <!-- TODO: reemplazar con la reflexión real de Ana María -->
+      <p class="mt-4 text-sm text-rose-950/80 leading-relaxed">
+        Escribe aquí qué aprendiste de todo lo que enseñó la profesora durante el trimestre y cómo lo vas a
+        aplicar como futura tecnóloga en ADSO.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===================== MODAL: REFLEXIÓN JUANITA ===================== -->
+  <div id="modal-reflexion-juanita" class="modal-overlay closed" role="dialog" aria-modal="true" aria-labelledby="modal-reflexion-juanita-title">
+    <div class="modal-panel">
+      <button type="button" class="modal-close" data-modal-close aria-label="Cerrar">&times;</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Reflexión del trimestre</span>
+      <h3 id="modal-reflexion-juanita-title" class="mt-1 font-display font-bold text-xl text-rose-950">Juanita Román Bedoya</h3>
+
+      <p class="mt-4 text-sm text-rose-950/80 leading-relaxed">
+        El tema que más me sorprendió fue el de los tipos de comunicación, ya que antes no lo conocía a
+        fondo. Al estudiarlo, identifiqué que suelo comunicarme de forma pasiva: en muchas ocasiones
+        antepongo las necesidades de los demás a las mías, aunque en otros momentos caigo en el extremo
+        contrario y actúo de forma un poco brusca al priorizarme a mí misma. Esto me hizo entender que debo
+        encontrar un punto de equilibrio: comunicarme respetando a las demás personas, pero también
+        respetando mis propias ideas y opiniones.
+      </p>
+      <p class="mt-4 text-sm text-rose-950/80 leading-relaxed">
+        Considero que este aprendizaje será clave en mi desempeño como futura tecnóloga en ADSO,
+        especialmente al momento de trabajar en equipo, ya que una comunicación asertiva me permitirá
+        expresar mis ideas con claridad y comprender mejor a mis compañeros, lo que se traduce en resultados
+        de mayor calidad. Asimismo, lo aprendido sobre comunicación no verbal me será útil para interpretar
+        el lenguaje corporal de las personas y detectar, a través de sus gestos, señales de incomodidad,
+        molestia o falta de sinceridad.
+      </p>
+    </div>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="border-t border-rose-100 py-8">
-    <p class="text-center text-sm text-rose-950/50">
-      &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
-    </p>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-gradient-to-br from-rose-500 to-rose-700 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-3 gap-10">
+
+      <div>
+        <a href="index.html" class="font-sans font-bold text-lg tracking-tight text-white">
+          Entre<span class="text-rose-400">Lineas</span>
+        </a>
+        <p class="mt-3 text-sm text-white/60 leading-relaxed">
+          Un recorrido por lo aprendido en la formación de comunicaciones,
+          contado por dos estudiantes de ADSO.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Explorar</h3>
+        <ul class="mt-4 space-y-2 text-sm text-white/70">
+          <li><a href="pages/comunicacion.html" class="hover:text-white transition-colors">Comunicación</a></li>
+          <li><a href="pages/tematica.html" class="hover:text-white transition-colors">Temática</a></li>
+          <li><a href="pages/trabajos.html" class="hover:text-white transition-colors">Trabajos</a></li>
+          <li><a href="pages/integrantes.html" class="hover:text-white transition-colors">Nosotras</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Creadoras</h3>
+        <p class="mt-4 text-sm text-white/70">Ana María Deossa Serna</p>
+        <p class="mt-1 text-sm text-white/70">Juanita Román Bedoya</p>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10">
+      <p class="max-w-6xl mx-auto px-6 py-5 text-center text-xs text-white/40">
+        &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+      </p>
+    </div>
   </footer>
 
   <script src="../js/main.js"></script>

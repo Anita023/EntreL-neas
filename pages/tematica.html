@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntreLineas</title>
+  <meta name="description" content="Temática vista en la formación de comunicaciones: tipos, formas, estilos, funciones del lenguaje y comunicación no verbal." />
+
+  <!-- Tailwind CSS (build estático local, sin CDN) -->
+  <link rel="stylesheet" href="../css/tailwind-build.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-page="tematica" class="bg-white text-rose-950">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="../index.html" class="font-sans font-bold text-lg tracking-tight">
+        Entre<span class="text-rose-500">Lineas</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
+        <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
+        <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
+        <li><a href="tematica.html" data-nav-link="tematica" class="nav-link">Temática</a></li>
+        <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Nosotras</a></li>
+      </ul>
+
+      <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <ul id="mobile-menu" class="closed md:hidden flex flex-col gap-1 px-6 pb-4 text-sm font-medium text-rose-950/80">
+      <li><a href="../index.html" data-nav-link="inicio" class="nav-link block py-2">Inicio</a></li>
+      <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link block py-2">Comunicación</a></li>
+      <li><a href="tematica.html" data-nav-link="tematica" class="nav-link block py-2">Temática</a></li>
+      <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link block py-2">Trabajos</a></li>
+      <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link block py-2">Integrantes</a></li>
+    </ul>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="hero-gradient">
+    <div class="max-w-4xl mx-auto px-6 pt-16 pb-14 text-center">
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-rose-950">Temática vista en formación</h1>
+      <p class="mt-4 max-w-2xl mx-auto text-rose-950/70 text-lg">
+        Recorrido por los temas que trabajamos durante el trimestre en la competencia de Comunicación,
+        desde la introducción hasta la comunicación no verbal. Explora cada tarjeta para ver su contenido detallado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== ÍNDICE / TARJETAS PRINCIPALES ===================== -->
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+<div class="text-center mb-12">
+  <span class="inline-block text-xs font-semibold tracking-[0.25em] text-rose-500 uppercase mb-3">
+    Índice Interactivo
+  </span>
+
+  <h2 class="font-display font-bold text-3xl md:text-4xl text-rose-950">
+    Contenido del Trimestre
+  </h2>
+
+  <p class="text-rose-950/60 mt-3 max-w-xl mx-auto leading-relaxed">
+    Explora cada temática y descubre la información que trabajamos durante el trimestre.
+  </p>
+</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 01</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">Introducción a la comunicación</h3>
+          <p class="text-sm text-rose-950/70 mt-2">¿Cómo nos comunicamos? Descubre el impacto del 93% no verbal y los 4 pilares fundamentales.</p>
+        </div>
+        <button onclick="openModal('modal-introduccion')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 02</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">Comunicación subjetiva y objetiva</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Aprende a diferenciar cuándo estamos comunicando (subjetivo) y cuándo informando (objetivo).</p>
+        </div>
+        <button onclick="openModal('modal-subjetivo')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 03</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">Tipos, formas y estilos</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Descubre cómo se dividen según las emociones, la necesidad o condición y la situación.</p>
+        </div>
+        <button onclick="openModal('modal-tipos')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 04</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">Los tipos y sus consecuencias</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Analiza la cadena completa: de la actitud comunicativa a la consecuencia emocional.</p>
+        </div>
+        <button onclick="openModal('modal-consecuencias')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 05</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">La comunicación asertiva</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Una comunicación clara, directa y empática sustentada en el respeto total.</p>
+        </div>
+        <button onclick="openModal('modal-asertiva')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 06</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">El proceso comunicativo</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Comparativa entre el modelo tradicional y el modelo completo de Roman Jakobson.</p>
+        </div>
+        <button onclick="openModal('modal-proceso')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 07</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">Las funciones del lenguaje</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Conoce las 6 funciones centradas en las distintas intenciones del 7% verbal.</p>
+        </div>
+        <button onclick="openModal('modal-funciones')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 08</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">La comunicación no verbal</h3>
+          <p class="text-sm text-rose-950/70 mt-2">Kinésica, proxémica, paralenguaje, microexpresiones de Paul Ekman y mucho más.</p>
+        </div>
+        <button onclick="openModal('modal-noverbal')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-rose-50/60 border border-rose-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+        <div>
+          <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Tema 09</span>
+          <h3 class="font-display font-bold text-xl text-rose-950 mt-2">El idioma: homófonas y homónimas</h3>
+          <p class="text-sm text-rose-950/70 mt-2">La precisión del código lingüístico: diferencias entre palabras homófonas y homónimas.</p>
+        </div>
+        <button onclick="openModal('modal-idioma')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== VENTANAS MODALES (MODALS) ===================== -->
+
+  <!-- Modal 1: Introducción -->
+  <div id="modal-introduccion" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-introduccion')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 01</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Introducción a la comunicación</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        El primer tema partió de una pregunta muy sencilla pero difícil de responder: <strong>¿cómo me comunico?</strong>
+         Ahí entendimos que comunicar no es solo hablar. De todo lo que transmitimos, cerca del
+        <strong>93 % corresponde a la comunicación no verbal</strong> y apenas un <strong>7 % a las palabras</strong>
+         que elegimos. Nuestro cuerpo, nuestro tono y nuestros gestos dicen mucho más de lo que creemos.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Los 4 pilares</h3>
+          <ul class="mt-2 space-y-1.5 text-sm text-rose-950/70">
+            <li><strong class="text-rose-600">Observar:</strong> mirar más allá de las palabras.</li>
+            <li><strong class="text-rose-600">Escuchar:</strong> atender de verdad, no esperar el turno para hablar.</li>
+            <li><strong class="text-rose-600">Analizar:</strong> interpretar lo que recibimos antes de reaccionar.</li>
+            <li><strong class="text-rose-600">Percibir y expresar:</strong> reconocer lo que sentimos y comunicarlo.</li>
+          </ul>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Funcional y condicionada</h3>
+          <p class="mt-2 text-sm text-rose-950/70 leading-relaxed">
+            La comunicación <strong>funcional</strong> es la que cumple su propósito: el mensaje llega como se pensó.
+             La <strong>condicionada</strong> está atravesada por nuestra <strong>intención</strong>, y esa intención
+             está cargada de <strong>emociones</strong>, lo que la vuelve <strong>subjetiva</strong>. Por eso dos
+             personas pueden escuchar la misma frase y entender cosas distintas.
+          </p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-introduccion')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Subjetivo y Objetivo -->
+  <div id="modal-subjetivo" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-subjetivo')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 02</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Comunicación subjetiva y objetiva</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Aprendimos a diferenciar cuándo estamos <strong>comunicando</strong> y cuándo estamos
+        <strong>informando</strong>. No es lo mismo contar algo desde lo que sentimos que entregar un dato verificable.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Subjetivo · Comunicación</h3>
+          <ul class="mt-2 space-y-1.5 text-sm text-rose-950/70">
+            <li>Es parcial</li>
+            <li>Está movida por emociones</li>
+            <li>Se basa en la opinión</li>
+            <li>Habla desde el <strong>YO</strong></li>
+          </ul>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Objetivo · Información</h3>
+          <ul class="mt-2 space-y-1.5 text-sm text-rose-950/70">
+            <li>Es imparcial</li>
+            <li>Se sostiene en razones</li>
+            <li>Usa argumentos</li>
+            <li>Busca lo común, no lo personal</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-rose-950/70">
+        Por esta razón los <strong>informes</strong> se escriben en <strong>tercera persona</strong>: para sacar
+         el "yo" del texto y dejar que hablen los hechos. Es algo que aplicamos directamente en la documentación
+         de nuestros proyectos de software.
+      </p>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-subjetivo')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Tipos, formas y estilos -->
+  <div id="modal-tipos" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-tipos')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 03</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Tipos, formas y estilos</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Tres conceptos que solemos confundir y que en clase quedaron bien separados: los <strong>tipos</strong>
+         dependen de nuestras emociones, las <strong>formas</strong> dependen de la necesidad o la condición, y los
+         <strong>estilos</strong> dependen de la situación en la que estemos.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Tipos</h3>
+          <p class="text-xs text-rose-500 font-medium">Según las emociones</p>
+          <ul class="mt-2 space-y-1 text-sm text-rose-950/70">
+            <li>Agresiva</li>
+            <li>Pasiva</li>
+            <li>Pasivo-agresiva</li>
+            <li>Agresivo-pasiva</li>
+            <li class="text-rose-600 font-semibold">Asertiva</li>
+          </ul>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Formas</h3>
+          <p class="text-xs text-rose-500 font-medium">Según la necesidad o condición</p>
+          <ul class="mt-2 space-y-1 text-sm text-rose-950/70">
+            <li>No verbal</li>
+            <li>Verbal</li>
+            <li>Corporal</li>
+            <li>Visual</li>
+            <li>Auditiva</li>
+            <li>Escrita</li>
+            <li>Virtual</li>
+          </ul>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Estilos</h3>
+          <p class="text-xs text-rose-500 font-medium">Según la situación</p>
+          <ul class="mt-2 space-y-1 text-sm text-rose-950/70">
+            <li>Formal</li>
+            <li>Informal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-tipos')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Consecuencias -->
+  <div id="modal-consecuencias" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-consecuencias')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 04</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Los tipos y sus consecuencias</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Cada tipo de comunicación deja una huella. En clase seguimos la cadena completa: de la actitud a la
+         consecuencia emocional.
+      </p>
+      <div class="mt-6 space-y-3">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-semibold text-rose-950">Agresiva</h3>
+          <p class="mt-1 text-sm text-rose-950/70"><strong>Impone</strong> → se centra en el <strong>yo</strong> → deja <strong>heridas emocionales</strong> en el otro.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-semibold text-rose-950">Pasiva</h3>
+          <p class="mt-1 text-sm text-rose-950/70"><strong>Sumisa</strong> → cede siempre ante <strong>el otro</strong> → produce <strong>frustración</strong> y termina golpeando la autoestima.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-semibold text-rose-950">Pasivo-agresiva</h3>
+          <p class="mt-1 text-sm text-rose-950/70">Se esconde en el sarcasmo, la ironía, la indirecta, la pulla, la sátira y la burla → deriva en <strong>bullying</strong> → y en quien lo recibe, en <strong>depresión</strong>.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-semibold text-rose-950">Agresivo-pasiva</h3>
+          <p class="mt-1 text-sm text-rose-950/70">Actúa por <strong>impulso</strong> y luego se vuelve contra uno mismo, en forma de autorreproche.</p>
+        </div>
+        <div class="bg-rose-100/70 rounded-2xl border border-rose-200 p-4">
+          <h3 class="font-semibold text-rose-600">Asertiva</h3>
+          <p class="mt-1 text-sm text-rose-950/70">Es la única que no deja daño: expresa lo que se piensa y se siente cuidando al otro. Es la meta de toda la competencia.</p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-consecuencias')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Comunicación asertiva -->
+  <div id="modal-asertiva" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-asertiva')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 05</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">La comunicación asertiva</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Una comunicación asertiva es <strong>clara, directa y empática</strong>. Clara porque el mensaje se entiende,
+         directa porque no da rodeos, y empática porque tiene en cuenta las emociones del otro. Ahí entra la
+         <strong>inteligencia emocional</strong>: no basta con tener la razón, hay que saber cómo decirla.
+      </p>
+      <div class="mt-6 bg-rose-50/50 rounded-2xl border border-rose-100 p-6">
+        <h3 class="font-display font-bold text-lg text-center text-rose-950">Todo se sostiene en el respeto</h3>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+          <div class="bg-white rounded-xl p-3 border border-rose-100">
+            <p class="font-semibold text-rose-600">Palabra</p>
+            <p class="mt-1 text-xs text-rose-950/70">correcta</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 border border-rose-100">
+            <p class="font-semibold text-rose-600">Entonación</p>
+            <p class="mt-1 text-xs text-rose-950/70">precisa</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 border border-rose-100">
+            <p class="font-semibold text-rose-600">Acciones</p>
+            <p class="mt-1 text-xs text-rose-950/70">coherentes y congruentes</p>
+          </div>
+        </div>
+        <p class="mt-4 text-xs text-rose-950/70 text-center">
+          Si las tres no van en la misma dirección, el mensaje pierde fuerza: recordemos que el
+          <strong>93 %</strong> de lo que comunicamos no son palabras.
+        </p>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-asertiva')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Proceso comunicativo -->
+  <div id="modal-proceso" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-proceso')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 06</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">El proceso comunicativo</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Comparamos el modelo tradicional con el modelo que propuso el lingüista
+         <strong>Roman Jakobson</strong>, que es más completo porque le asigna una función a cada elemento.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Modelo tradicional</h3>
+          <ul class="mt-2 space-y-1 text-sm text-rose-950/70">
+            <li><strong>Emisor:</strong> quien envía el mensaje</li>
+            <li><strong>Receptor:</strong> quien lo recibe</li>
+            <li><strong>Mensaje:</strong> lo que se transmite</li>
+            <li><strong>Código / lenguaje:</strong> el sistema compartido</li>
+            <li><strong>Canal:</strong> el medio por el que viaja</li>
+            <li><strong>Contexto:</strong> la situación que lo rodea</li>
+          </ul>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Modelo de Roman Jakobson</h3>
+          <p class="mt-2 text-sm text-rose-950/70 leading-relaxed">
+            Toma los mismos elementos, pero a cada uno le corresponde una función del lenguaje: el emisor con la
+             emotiva, el contexto con la referencial, el receptor con la apelativa, el canal con la fática, el
+             mensaje con la poética y el código con la metalingüística.
+          </p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-proceso')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Funciones del lenguaje -->
+  <div id="modal-funciones" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-funciones')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 07</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Las funciones del lenguaje</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Son seis y corresponden a ese <strong>7 %</strong> verbal de la comunicación. Cada una responde a una
+         intención distinta del mensaje.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">01</p>
+          <h3 class="font-semibold text-rose-950">Emotiva</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>emisor</strong>. Expresa lo que siente: emociones, estados de ánimo, opiniones.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">02</p>
+          <h3 class="font-semibold text-rose-950">Referencial</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>contexto</strong>. Entrega información objetiva y veraz, es decir, verificable.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">03</p>
+          <h3 class="font-semibold text-rose-950">Apelativa</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>receptor</strong>. Busca influir en él mediante órdenes, sugerencias o emociones.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">04</p>
+          <h3 class="font-semibold text-rose-950">Fática</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>canal</strong>. Sirve para iniciar, sostener o cerrar la conversación y verificar que el otro sigue ahí.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">05</p>
+          <h3 class="font-semibold text-rose-950">Poética</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>mensaje</strong>. Embellece la forma en que se dice algo.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <p class="font-display text-xl text-rose-300 font-bold">06</p>
+          <h3 class="font-semibold text-rose-950">Metalingüística</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Centrada en el <strong>código</strong>. Es usar el lenguaje para hablar del lenguaje mismo.</p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-funciones')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Comunicación no verbal -->
+  <div id="modal-noverbal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-noverbal')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 08</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">La comunicación no verbal</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Es el <strong>93 %</strong> de lo que transmitimos y fue el tema más extenso del trimestre. La trabajamos
+         por grupos y cada uno investigó un componente distinto.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Kinésica</h3>
+          <p class="mt-1 text-xs text-rose-950/70">El movimiento del cuerpo: postura, gestos y la seguridad que proyectamos. Se habla de postura abierta o cerrada según qué tanto nos mostramos disponibles al otro.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Proxémica</h3>
+          <p class="mt-1 text-xs text-rose-950/70">El uso del espacio y la distancia. Manejamos cuatro espacios según la relación que tengamos con la persona: íntimo, personal, social y público.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Paralenguaje</h3>
+          <p class="mt-1 text-xs text-rose-950/70">No es qué decimos sino cómo suena: tono, volumen, velocidad, timbre, ritmo y entonación de la voz.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Emblemas y ademanes</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Gestos con significado propio. Pueden ser <strong>conscientes</strong> (universales, específicos o culturales) o <strong>inconscientes</strong> (naturales o artificiales).</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Microexpresiones</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Gestos faciales involuntarios que duran una fracción de segundo. Según los estudios de <strong>Paul Ekman</strong>, revelan emociones básicas como alegría, tristeza, ira, miedo, sorpresa y asco.</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-4">
+          <h3 class="font-display font-bold text-base text-rose-950">Segregaciones semánticas</h3>
+          <p class="mt-1 text-xs text-rose-950/70">Sonidos que comunican sin ser palabras: onomatopeyas y segregados lingüísticos como "mmm" o "ajá".</p>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-rose-950/70">
+        A esto se suman la <strong>vestimenta</strong>, el <strong>saludo</strong> y el <strong>protocolo</strong>,
+         que también hablan por nosotros antes de que abramos la boca, y que dependen mucho de la cultura y del
+         clima del lugar.
+      </p>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-noverbal')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: Idioma -->
+  <div id="modal-idioma" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-idioma')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Tema 09</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">El idioma: homófonas y homónimas</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">
+        Cerramos con el idioma como código. Es <strong>amplio</strong> y <strong>estratificado</strong>: una misma
+         cosa se renombra de maneras distintas según el grupo o la región, y por eso a veces una palabra nos resulta
+         desconocida. De ahí que la precisión en la palabra sea parte de la asertividad.
+      </p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Homófonas</h3>
+          <p class="mt-2 text-sm text-rose-950/70">Suenan igual pero se escriben distinto y significan cosas diferentes.</p>
+          <p class="mt-3 text-sm text-rose-600 font-medium">valla · vaya · baya</p>
+        </div>
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <h3 class="font-display font-bold text-lg text-rose-950">Homónimas</h3>
+          <p class="mt-2 text-sm text-rose-950/70">Se escriben y se pronuncian igual, pero el significado cambia según el contexto.</p>
+          <p class="mt-3 text-sm text-rose-600 font-medium">café (bebida) · café (color) · café (establecimiento)</p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-idioma')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===================== FOOTER ===================== -->
+ <footer class="bg-gradient-to-br from-rose-500 to-rose-700 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-3 gap-10">
+
+      <div>
+        <a href="index.html" class="font-sans font-bold text-lg tracking-tight text-white">
+          Entre<span class="text-rose-400">Lineas</span>
+        </a>
+        <p class="mt-3 text-sm text-white/60 leading-relaxed">
+          Un recorrido por lo aprendido en la formación de comunicaciones,
+          contado por dos estudiantes de ADSO.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Explorar</h3>
+        <ul class="mt-4 space-y-2 text-sm text-white/70">
+          <li><a href="pages/comunicacion.html" class="hover:text-white transition-colors">Comunicación</a></li>
+          <li><a href="pages/tematica.html" class="hover:text-white transition-colors">Temática</a></li>
+          <li><a href="pages/trabajos.html" class="hover:text-white transition-colors">Trabajos</a></li>
+          <li><a href="pages/integrantes.html" class="hover:text-white transition-colors">Nosotras</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-semibold tracking-[0.2em] text-rose-400 uppercase">Creadoras</h3>
+        <p class="mt-4 text-sm text-white/70">Ana María Deossa Serna</p>
+        <p class="mt-1 text-sm text-white/70">Juanita Román Bedoya</p>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10">
+      <p class="max-w-6xl mx-auto px-6 py-5 text-center text-xs text-white/40">
+        &copy; 2026 Comunicación Asertiva — Proyecto académico ADSO.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script para abrir y cerrar las modales -->
+  <script>
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden'; // Evita el scroll del fondo
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto'; // Restaura el scroll
+      }
+    }
+
+    // Cerrar modal al hacer clic fuera del contenido
+    window.onclick = function(event) {
+      if (event.target.classList.contains('fixed') && event.target.classList.contains('inset-0')) {
+        event.target.classList.remove('flex');
+        event.target.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
