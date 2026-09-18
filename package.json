@@ -2,9 +2,10 @@
   "name": "entrel-neas",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "serve -s . -l $PORT",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/Anita023/EntreL-neas#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "serve": "^14.2.6",
     "tailwindcss": "^4.3.3"
   }
 }
