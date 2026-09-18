@@ -23,13 +23,13 @@
         Entre<span class="text-rose-500">Líneas</span>
       </a>
 
-<ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
-  <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
-  <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
-  <li><a href="tematica.html" data-nav-link="tematica" class="nav-link">Temática</a></li>
-  <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
-  <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Nosotras</a></li>
-</ul>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-rose-950/80">
+        <li><a href="../index.html" data-nav-link="inicio" class="nav-link">Inicio</a></li>
+        <li><a href="comunicacion.html" data-nav-link="comunicacion" class="nav-link">Comunicación</a></li>
+        <li><a href="tematica.html" data-nav-link="tematica" class="nav-link">Temática</a></li>
+        <li><a href="trabajos.html" data-nav-link="trabajos" class="nav-link">Trabajos</a></li>
+        <li><a href="integrantes.html" data-nav-link="integrantes" class="nav-link">Nosotras</a></li>
+      </ul>
 
       <button id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"
         class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50">
@@ -56,56 +56,116 @@
     </div>
   </section>
 
+  <!-- ===================== TRABAJOS ===================== -->
   <section class="max-w-6xl mx-auto px-6 py-16">
     <div id="trabajos-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-     <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
-  <div class="w-full h-48 overflow-hidden">
-    <img src="https://i.pinimg.com/474x/61/e1/34/61e134ac2873eea07eb742b53a408bf6.jpg" 
-         alt="La Sapa Caramelo" 
-         class="w-full h-full object-cover scale-125 object-center">
-  </div>
-  <div class="p-5">
-    <h3 class="font-semibold text-rose-950">La Sapa Caramelo</h3>
-    <p class="mt-1 text-sm text-rose-950/60">En esta actividad la profe nos dio unas instrucciones para escribir un cuento, donde ella nos dio la introducción, palabras al azar y nos tomó el tiempo para escribir lo que se nos ocurriera que contuvieran esas palabra.</p>
-    <a href="https://classroom.google.com/u/4/c/Nzk4NTE0MDY0ODg2/a/Nzk4NTE0MDY0OTAy/details" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ana Maria</a> <br>
-    <a href="https://classroom.google.com/c/Nzk4NTE0MDY0ODg2/a/Nzk4NTE0MDY0OTAy/details" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Juanita</a>
-  </div>
-</article>
-
+      <!-- Trabajo 1: La Sapa Caramelo (botones abren modal) -->
       <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
-         <img src="https://cursosmultimedia.es/wp-content/uploads/2021/03/tipos-de-comunicacion-portada.png" alt="Tipos de comunicación" class="w-full h-48 object-cover">
+        <div class="w-full h-48 overflow-hidden">
+          <img src="https://i.pinimg.com/474x/61/e1/34/61e134ac2873eea07eb742b53a408bf6.jpg"
+               alt="La Sapa Caramelo"
+               class="w-full h-full object-cover scale-125 object-center">
+        </div>
+        <div class="p-5">
+          <h3 class="font-semibold text-rose-950">La Sapa Caramelo</h3>
+          <p class="mt-1 text-sm text-rose-950/60">En esta actividad la profe nos dio unas instrucciones para escribir un cuento, donde ella nos dio la introducción, palabras al azar y nos tomó el tiempo para escribir lo que se nos ocurriera que contuvieran esas palabra.</p>
+          <button onclick="openModal('modal-cuento-ana')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Ana Maria
+          </button>
+          <button onclick="openModal('modal-cuento-juanita')" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Juanita
+          </button>
+        </div>
+      </article>
+
+      <!-- Trabajo 2: Taller Tipos de Comunicación (botones abren el documento) -->
+      <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
+        <img src="https://cursosmultimedia.es/wp-content/uploads/2021/03/tipos-de-comunicacion-portada.png" alt="Tipos de comunicación" class="w-full h-48 object-cover">
         <div class="p-5">
           <h3 class="font-semibold text-rose-950">Taller Tipos de Comunicación</h3>
           <p class="mt-1 text-sm text-rose-950/60">En esta actividad hicimos la investigación sobre los diferentes tipos de comunicación, compartimos diferentes perspectivas y reflexionamos sobre nuestra propia forma de comunicarnos.</p>
-          <a href="https://docs.google.com/document/d/1hZ4ueHfgnBzYoixF5CR3y70E2cZxOQil/edit" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ana Maria </a> <br>
-          <a href="https://docs.google.com/document/d/1lLvgtLn8Uizs4oBtWIQdwzh8ZbhbR2LB/edit?usp=sharing&ouid=101595718207851186618&rtpof=true&sd=true" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Juanita</a>
+          <a href="https://docs.google.com/document/d/1hZ4ueHfgnBzYoixF5CR3y70E2cZxOQil/edit" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Ana Maria
+          </a>
+          <a href="https://docs.google.com/document/d/1lLvgtLn8Uizs4oBtWIQdwzh8ZbhbR2LB/edit?usp=sharing&ouid=101595718207851186618&rtpof=true&sd=true" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Juanita
+          </a>
         </div>
       </article>
 
+      <!-- Trabajo 3: Funciones del Lenguaje (un solo botón, trabajo en pareja) -->
       <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
-         <img src="https://cdn0.uncomo.com/es/posts/5/4/3/cuales_son_las_funciones_del_lenguaje_24345_1200.jpg" alt="Funciones del Lenguaje" class="w-full h-48 object-cover">
+        <img src="https://cdn0.uncomo.com/es/posts/5/4/3/cuales_son_las_funciones_del_lenguaje_24345_1200.jpg" alt="Funciones del Lenguaje" class="w-full h-48 object-cover">
         <div class="p-5">
           <h3 class="font-semibold text-rose-950">Funciones del Lenguaje</h3>
           <p class="mt-1 text-sm text-rose-950/60">En este trabajo hicimos la investigacion sobre las funciones del lengauje especialemente la Emotiva la cual es la del Emisor: expresar lo que sentimos</p>
-          <a href="https://www.canva.com/design/DAHRpfQF1eY/ae8EURKwIYLhx93m4hXr6A/edit" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ana Maria y Juanita</a> 
+          <a href="https://www.canva.com/design/DAHRpfQF1eY/ae8EURKwIYLhx93m4hXr6A/edit" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Ana Maria y Juanita
+          </a>
         </div>
       </article>
 
+      <!-- Trabajo 4: Investigación comunicación no verbal (botones abren el documento) -->
       <article class="card-hover bg-white rounded-2xl border border-rose-100 overflow-hidden">
-       <img src="https://media.istockphoto.com/id/1328395863/es/vector/gestos-negativos-lenguaje-de-los-dedos-comunicaci%C3%B3n-no-verbal.jpg?s=612x612&w=0&k=20&c=SMHXAUce95q0lMrr3fr0TEt908hSqlGa0QPSZdRsbvo=" alt="Investigación comunicación no verbal" class="w-full h-48 object-cover">
+        <img src="https://media.istockphoto.com/id/1328395863/es/vector/gestos-negativos-lenguaje-de-los-dedos-comunicaci%C3%B3n-no-verbal.jpg?s=612x612&w=0&k=20&c=SMHXAUce95q0lMrr3fr0TEt908hSqlGa0QPSZdRsbvo=" alt="Investigación comunicación no verbal" class="w-full h-48 object-cover">
         <div class="p-5">
           <h3 class="font-semibold text-rose-950">Investigación comunicación no verbal</h3>
           <p class="mt-1 text-sm text-rose-950/60">Hicimos la investigacion sobre la comunicación no verbal, la cual nos asignaron por grupos diferentes y con temas diferente, adiconal debiamos ver una pelicula y sacar 2 escenas sobre el tema que nos correspondio.</p>
-          <a href="https://docs.google.com/document/d/1fghHSFeBc7s3Ugw9hH1UwOPTSATaal4U/edit" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Ana Maria </a> <br>
-          <a href="https://docs.google.com/document/d/1jxfmwM6x7RvGDUN9WB_0-oS3gGyjAgOdDhSe4iLoJOw/edit?usp=sharing" class="mt-3 inline-block text-sm font-medium text-rose-600 hover:underline">Juanita</a>
-
+          <a href="https://docs.google.com/document/d/1fghHSFeBc7s3Ugw9hH1UwOPTSATaal4U/edit" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Ana Maria
+          </a>
+          <a href="https://docs.google.com/document/d/1jxfmwM6x7RvGDUN9WB_0-oS3gGyjAgOdDhSe4iLoJOw/edit?usp=sharing" class="mt-6 w-full py-2.5 px-4 bg-rose-600 hover:bg-rose-700 text-white font-medium rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+            Juanita
+          </a>
         </div>
       </article>
 
     </div>
   </section>
 
+  <!-- ===================== MODALES (La Sapa Caramelo) ===================== -->
+  <!-- Van fuera de las tarjetas para que el efecto hover de la tarjeta no los descuadre -->
+
+  <!-- Modal: Cuento de Ana María -->
+  <div id="modal-cuento-ana" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-cuento-ana')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Ana María</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Cuento la Sapa Caramelo</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">Palabras: MOCO - ESTACA - NUDO - TAPA - ESPERANZA</p>
+      <div class="mt-6">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <p class="text-sm text-rose-950/70 leading-relaxed">
+          Estaba la sapa caramelo sentada en la orilla del río cauca, en el peñasco mas alto de la región tenía una increíble vista, la cual le gustaba mucho y disfrutaba mucho ir a ese lugar,  le gustaba disfrutar del atardecer, ese dia la sapa caramelo tenía un poco de congestión y le salio un moco se lo limpio y luego siguió viendo el atardecer, luego de eso empezó rumbo hacia su casa y se encontró una estaca Era un poco grande pero no le dio casi importancia y siguió su camino, mas adelante en un gran árbol se encontró una cuerda que tenía un nudo  muy grande, luego de verlo le pareció raro pero siguió adelante con su camino,casi no se encontraba ese tipo de cosas cuando iba llegando a su casa se encontró dentro de unos arbustos una tapa y decidió llevarla a su casa, y empezó a pensar que puedo hacer con esto, pensó y dijo ahh puedo cocinar con ella y tenerle esperanza de que aun funciona.
+          </p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-cuento-ana')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Cuento de Juanita -->
+  <div id="modal-cuento-juanita" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-8 relative shadow-2xl my-8">
+      <button onclick="closeModal('modal-cuento-juanita')" class="absolute top-5 right-5 text-rose-950/50 hover:text-rose-950 w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center font-bold">✕</button>
+      <span class="text-xs font-semibold tracking-widest text-rose-500 uppercase">Juanita</span>
+      <h2 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-rose-950">Cuento la Sapa Caramelo</h2>
+      <p class="mt-4 text-rose-950/80 leading-relaxed">Palabras: MOCO - ESTACA - NUDO - TAPA - ESPERANZA</p>
+      <div class="mt-6">
+        <div class="bg-rose-50/50 rounded-2xl border border-rose-100 p-5">
+          <p class="text-sm text-rose-950/70 leading-relaxed">
+            Estaba la sapa caramelo sentada a la orilla del rio cauca en el peñasco más alto de la región. estaba imaginando cómo sería su vida cuando ya empezará trabajar en la empresa de dulces de su familia, que le tocaría hacer, y como sería el ambiente de trabajo con los demás sapos. Se puso a pensar y arrogar que no le toca trabajar en la sección de limpieza ya que ahí se tenía que limpiar el moco que dejaba como residuos organizar los empaques de los dulces. También se puso a pensar que el lugar de esa sección de trabajo era muy tenebroso ya que estaba rodeada de muchos estacas para evitar que los mosquitos entraran a esa sección y se empezarán a comer los dulces, otra cosa que se imagino la sapa caramelo es que no le gustaria trabajar en la sección de limpieza y menos en la parte donde le tenia que quitar el nudo a los uniformes de los demás sapos, y no solo eso lo peor que se imagina la sapa caramelo es que a todos esos uniformes les tocaba volver a coserle la tapa de seguridad que tenía cada uniforme, cosa que le preocupa ya que ella no sobia coser. Después de mucho rato de imaginar los cosas que  ella no quería hacer llegó su mamá y se le sentó al lado y le dijo: hija yo no te preocupes por lo que te va tocar hacer en la empresa todo se te va explicar y lo vas hacer súper bien. Con eso la Sapa tuvo esperanza.
+          </p>
+        </div>
+      </div>
+      <div class="mt-8 text-right">
+        <button onclick="closeModal('modal-cuento-juanita')" class="px-6 py-2.5 bg-rose-950 text-white rounded-xl text-sm font-medium hover:bg-rose-900 transition-colors">Cerrar</button>
+      </div>
+    </div>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="bg-gradient-to-br from-rose-500 to-rose-700 text-white">
@@ -145,6 +205,19 @@
       </p>
     </div>
   </footer>
+<script>
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script>
 
   <script src="../app/main.js"></script>
 </body>
